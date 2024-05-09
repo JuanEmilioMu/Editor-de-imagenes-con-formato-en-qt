@@ -32,14 +32,16 @@ Si le das a la opcion "Discard" pasas directamente a la segunda posibilidad.
 
    ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/c7858c34-80eb-4cc9-8679-072eabf68b0d)
 
+(Recuerda que si no escoges un archivo en un formato valido el programa no podra abrirlo).
 
+"Guardar como"
+
+Si le das click a la opcion "Guardar como", se te abrira una ventana en la cual puedes escoger en donde guardar tu archivo y tambien en que formato lo quieres guardar. La ventana sale de la siguiente manera:
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/de402a85-d250-487e-b508-388ccf4b4cff)
 
 
-"Salir"
 
--Si al darle click al boton de "Salir" ya has modificado tu archivo se abrira la siguiente ventana:
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/4ea53fb8-8e19-45b7-9115-389ef8b7be2e)
 
