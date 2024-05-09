@@ -1,5 +1,5 @@
 # Editor-de-imagenes-con-formato-en-qt
-Este repositorio aloja un editor de imagen creado con Qt Creator que facilita la edición de imagen con formato. Incluye características como cambio de color del lapiz, tamaño del lapiz, borrador, y más. Los usuarios también tienen la opción de subir imagenes que tengan guardadas en sus computadoras.
+Este repositorio aloja un editor de imagen creado con el programa QT Creator en el lenguaje de programación c + +, el programa contiene un algoritmo con una estructura modular por lo que todo el proyecto está subdividido en subproblemas más pequeños que facilita la edición de imagen con formato. Incluye características como cambio de color del lapiz, tamaño del lapiz, borrador, y más. Los usuarios también tienen la opción de subir imagenes que tengan guardadas en sus computadoras. Este proyecto fue elaborado en el programa QT Creator con el lenguaje de programación c + +, el programa contiene un algoritmo con una estructura modular por lo que todo el proyecto está subdividido en subproblemas más pequeños.
 
 # Manual de usuario
 Una vez ejecutado el programa, va a ver la siguiente ventana:
@@ -68,7 +68,9 @@ Al pulsar la primera opción "Color del lapiz...", inmediatamente mostrará la s
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/ab90a2c4-9d66-435c-9962-2b3d593a40d5)
 
+Permitiendo al usuario escoger, entre colores predeterminados ó codigo RGB.
 
+Al pulsar la segunda opción "Ancho del Trazo...", inmediatamente mostrará la siguiente ventana : 
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/41cb5513-d176-4769-9466-eeee953e67a4)
 
