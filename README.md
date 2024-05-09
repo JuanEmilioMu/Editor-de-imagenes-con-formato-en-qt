@@ -26,15 +26,13 @@ Si le das click a la opcion "Save", se te abrira una ventana en la cual puedes e
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/de402a85-d250-487e-b508-388ccf4b4cff)
 
+Si le das a la opcion "Discard" pasas directamente a la segunda posibilidad.
 
+2. Si no has modificado o le diste "Discard" te saldra una ventana en la cual escogeras el archivo que quieres ver en el editor de imagen. Te saldra de la siguiente manera:
 
    ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/c7858c34-80eb-4cc9-8679-072eabf68b0d)
 
-(Recuerda que si no escoges un archivo en un formato valido el programa no podra abrirlo).
 
-"Guardar como"
-
-Si le das click a la opcion "Guardar como", se te abrira una ventana en la cual puedes escoger en donde guardar tu archivo y tambien en que formato lo quieres guardar. La ventana sale de la siguiente manera:
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/de402a85-d250-487e-b508-388ccf4b4cff)
 
