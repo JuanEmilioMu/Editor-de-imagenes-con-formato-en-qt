@@ -76,5 +76,12 @@ Al pulsar la segunda opción "Ancho del Trazo...", inmediatamente mostrará la s
 
 Permitiendo ingresar al usuario, con numeros enteros el tamaño del trazo, siendo 1 el mínimo permitido y 250 el número máximo.
 
+Al pulsar la tercera opcion "Borrador...", no saldrá ninguna ventana emergente, sino que automaticamente va a seleccionar el color blanco, logrando asi el efecto de borrador, el ancho va a ser el mismo que se este usando en el ancho del trazo en ese momento, pero tambien se puede modificar en la opcion "Ancho del trazo..." actualizando su valor por el requerido del usuario.
+
+Al pulsar la cuarta opción "Borrar pantalla...", tampoco saldrá ninguna ventana emergente, usa el mismo concepto de la opcion anterior, por medio de los valores RGB, actualiza el lienzo con el color blanco, dando asi la ilusión de que se borró la pantalla.
+
+
+
+
 
 
