@@ -13,10 +13,16 @@ Al darle click en el boton de "Archivo" se te abre el siguiente menú :
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/8f0b0417-31f5-44e4-960c-ea28c9dc28e8)
 
+Es decir, "Archivo" tiene 3 opciones, "Abrir", "Guardar como", "Salir."
+Aquí su descripción:
 
+Al darle click en el boton de "Abrir" pueden pasar dos cosas
+
+1. si has modificado el archivo te saldra la siguiente imagen:
+   
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/40e9525f-ca64-427a-902f-87e406711aee)
 
-Si le das click a la opcion "Save", se te abrira una ventana en la cual puedes escoger en donde guardar tu archivo y tambien en que formato lo quieres guardar. La ventana sale de la siguiente manera:
+
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/de402a85-d250-487e-b508-388ccf4b4cff)
 
