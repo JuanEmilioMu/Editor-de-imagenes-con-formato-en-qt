@@ -68,12 +68,15 @@ Al pulsar la primera opción "Color del lapiz...", inmediatamente mostrará la s
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/ab90a2c4-9d66-435c-9962-2b3d593a40d5)
 
-Permitiendo al usuario escoger, entre colores predeterminados ó codigo RGB.
 
-Al pulsar la segunda opción "Ancho del Trazo...", inmediatamente mostrará la siguiente ventana : 
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/41cb5513-d176-4769-9466-eeee953e67a4)
 
+Permitiendo ingresar al usuario, con numeros enteros el tamaño del trazo, siendo 1 el mínimo permitido y 250 el número máximo.
+
+Al pulsar la tercera opcion "Borrador...", no saldrá ninguna ventana emergente, sino que automaticamente va a seleccionar el color blanco, logrando asi el efecto de borrador, el ancho va a ser el mismo que se este usando en el ancho del trazo en ese momento, pero tambien se puede modificar en la opcion "Ancho del trazo..." actualizando su valor por el requerido del usuario.
+
+Al pulsar la cuarta opción "Borrar pantalla...", tampoco saldrá ninguna ventana emergente, usa el mismo concepto de la opcion anterior, por medio de los valores RGB, actualiza el lienzo con el color blanco, dando asi la ilusión de que se borró la pantalla.
 
 
 
