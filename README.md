@@ -8,11 +8,6 @@ Este repositorio aloja un editor de imagen creado con el programa QT Creator en 
 
 Este proyecto se desarrolló utilizando Qt Creator y utiliza CMake como sistema de compilación. La arquitectura adopta una estructura modular que simplifica el mantenimiento y la ampliación.
 
-# Flujo de ejecución
-
-
-
-
 # Descripción de archivos
 
 **main.cpp**
@@ -46,6 +41,11 @@ Este es un archivo de proyecto para Qt Creator que define la estructura y depend
 **areapintar.cpp**
 
 Este archivo define la implementación de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Proporciona funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
+
+
+# Flujo de ejecución
+
+Inicia en main.cpp y gracias a la interacción del usuario, genera eventos, modifica los eventos del programa y actualiza los valores predeterminados del programa, por la lógica dada en Mainwindow.cpp y areapintar.cpp.
 
 
 
