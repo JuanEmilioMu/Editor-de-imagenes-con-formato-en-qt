@@ -4,9 +4,10 @@ Este repositorio aloja un editor de imagen creado con el programa QT Creator en 
 # Manual de usuario
 Una vez ejecutado el programa, va a ver la siguiente ventana:
 
- ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/2f6817cf-6005-4638-8123-69e27adb8131)
+ ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/e14610ae-c7f3-4e35-a1ce-16c5cec718b2)
 
-La cual es la ventana principal del programa. Se aprecia que por defecto, tiene dos menús, estos son "Archivo" y "Opciones."
+
+La cual es la ventana principal del programa. Se aprecia que por defecto, tiene tres menús, estos son "Archivo", "Opciones" y "Figuras."
 
 # Archivo
 Al darle click en el boton de "Archivo" se te abre el siguiente menú :
@@ -59,6 +60,7 @@ Si le das click a la opcion "Discard" el editor de imagen se cierra automaticame
 
 
 # Opciones
+
 Al darle click en el boton de "Opciones" se te abre el siguiente menú :
 
 
@@ -79,6 +81,15 @@ Permitiendo ingresar al usuario, con numeros enteros el tamaño del trazo, siend
 Al pulsar la tercera opcion "Borrador...", no saldrá ninguna ventana emergente, sino que automaticamente va a seleccionar el color blanco, logrando asi el efecto de borrador, el ancho va a ser el mismo que se este usando en el ancho del trazo en ese momento, pero tambien se puede modificar en la opcion "Ancho del trazo..." actualizando su valor por el requerido del usuario.
 
 Al pulsar la cuarta opción "Borrar pantalla...", tampoco saldrá ninguna ventana emergente, usa el mismo concepto de la opcion anterior, por medio de los valores RGB, actualiza el lienzo con el color blanco, dando asi la ilusión de que se borró la pantalla.
+
+#Figuras
+
+Al darle click en el boton de "Opciones" se te abre el siguiente menú :
+
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/2d1c3fe3-0e7a-4fcb-b151-76b256316f04)
+
+
+
 
 # Descripcion de la arquitectura y estructura del porgrama
 
