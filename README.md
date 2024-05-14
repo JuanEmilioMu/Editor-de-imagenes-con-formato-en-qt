@@ -1,6 +1,23 @@
+# Paint-ando
+
+# Editor-de-imagenes-con-formato-en-qt
+
+Este repositorio aloja un editor de imagen creado con el programa QT Creator en el lenguaje de programación c + +, el programa contiene un algoritmo con una estructura modular por lo que todo el proyecto está subdividido en subproblemas más pequeños que facilita la edición de imagen con formato. Incluye características como cambio de color del lapiz, tamaño del lapiz, borrador, y más. Los usuarios también tienen la opción de subir imagenes que tengan guardadas en sus computadoras. Este proyecto fue elaborado en el programa QT Creator con el lenguaje de programación c + +, el programa contiene un algoritmo con una estructura modular por lo que todo el proyecto está subdividido en subproblemas más pequeños.
+
+# Descripcion de la arquitectura 
+
+Este proyecto se desarrolló utilizando Qt Creator y utiliza CMake como sistema de compilación. La arquitectura adopta una estructura modular que simplifica el mantenimiento y la ampliación.
+
+# Flujo de ejecución
 
 
-# Descripcion de la arquitectura y estructura del porgrama
+
+
+# Descripción de archivos
+
+**main.cpp**
+
+Este es el punto de partida de la aplicación. Crea una instancia de QApplication e inicializa la ventana principal.
 
 **mainwindow.cpp**
 
@@ -18,13 +35,9 @@ Este es el archivo de cabecera de la clase MainWindow, que es la ventana princip
 
 Este es el archivo de cabecera de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Define la interfaz pública de la clase, incluyendo funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
 
-**main.cpp**
-
-Este es el punto de partida de la aplicación. Crea una instancia de QApplication e inicializa la ventana principal.
-
 **mainwindow.ui**
 
-Este es un archivo de diseño de Qt que define la interfaz del usuario de la aplicación. Incluye la la ventana principal, menús, botones y otros widgets.
+Este es un archivo de diseño de Qt, no se hace uso de este directamente.
 
 **ASDA.pro**
 
