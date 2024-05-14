@@ -82,7 +82,7 @@ Al pulsar la tercera opcion "Borrador...", no saldrá ninguna ventana emergente,
 
 Al pulsar la cuarta opción "Borrar pantalla...", tampoco saldrá ninguna ventana emergente, usa el mismo concepto de la opcion anterior, por medio de los valores RGB, actualiza el lienzo con el color blanco, dando asi la ilusión de que se borró la pantalla.
 
-#Figuras
+# Figuras
 
 Al darle click en el boton de "Opciones" se te abre el siguiente menú :
 
