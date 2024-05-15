@@ -47,8 +47,11 @@ Este archivo define la implementación de la clase AreaPintar, que es responsabl
 Inicia en main.cpp y gracias a la interacción del usuario, genera eventos, modifica los eventos del programa y actualiza los valores predeterminados del programa, por la lógica dada en Mainwindow.cpp y areapintar.cpp.
 
 # Contactanos
+
 samuel.zuleta@utp.edu.co
+
 emilio.munoz@utp.edu.co
+
 juan.llano@utp.edu.co
 
 
