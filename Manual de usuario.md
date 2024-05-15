@@ -7,15 +7,16 @@ Una vez ejecutado el programa, va a ver la siguiente ventana:
 
  ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/e14610ae-c7f3-4e35-a1ce-16c5cec718b2)
 
-
 La cual es la ventana principal del programa. Se aprecia que por defecto, tiene tres menús, estos son "Archivo", "Opciones" y "Figuras."
 
 # Archivo
+
 Al darle click en el boton de "Archivo" se te abre el siguiente menú :
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/8f0b0417-31f5-44e4-960c-ea28c9dc28e8)
 
 Es decir, "Archivo" tiene 3 opciones, "Abrir", "Guardar como", "Salir."
+
 Aquí su descripción:
 
 Al darle click en el boton de "Abrir" pueden pasar dos cosas
@@ -32,7 +33,7 @@ Si le das a la opcion "Discard" pasas directamente a la segunda posibilidad.
 
 2. Si no has modificado o le diste "Discard" te saldra una ventana en la cual escogeras el archivo que quieres ver en el editor de imagen. Te saldra de la siguiente manera:
 
-   ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/c7858c34-80eb-4cc9-8679-072eabf68b0d)
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/c7858c34-80eb-4cc9-8679-072eabf68b0d)
 
 (Recuerda que si no escoges un archivo en un formato valido el programa no podra abrirlo).
 
@@ -46,7 +47,6 @@ Si le das click a la opcion "Guardar como", se te abrira una ventana en la cual 
 
 -Si al darle click al boton de "Salir" ya has modificado tu archivo se abrira la siguiente ventana:
 
-
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/4ea53fb8-8e19-45b7-9115-389ef8b7be2e)
 
 Si le das click a la opcion "Save", se te abrira una ventana en la cual puedes escoger en donde guardar tu archivo y tambien en que formato lo quieres guardar. La ventana sale de la siguiente manera:
@@ -55,15 +55,13 @@ Si le das click a la opcion "Save", se te abrira una ventana en la cual puedes e
 
 Si le das click a la opcion "Discard" el editor de imagen se cierra automaticamente sin guardar ningun cambio.
 
-- Si al darle click al boton de "Salir" no has modificado el archivo: El editor de imagen se cierra automaticamente.
-
+Si al darle click al boton de "Salir" no has modificado el archivo: El editor de imagen se cierra automaticamente.
 
 
 
 # Opciones
 
 Al darle click en el boton de "Opciones" se te abre el siguiente menú :
-
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/8de83231-d6a3-4121-95f4-37f9b498490b)
 
@@ -83,10 +81,14 @@ Al pulsar la tercera opcion "Borrador...", no saldrá ninguna ventana emergente,
 
 Al pulsar la cuarta opción "Borrar pantalla...", tampoco saldrá ninguna ventana emergente, usa el mismo concepto de la opcion anterior, por medio de los valores RGB, actualiza el lienzo con el color blanco, dando asi la ilusión de que se borró la pantalla.
 
+
+
 # Figuras
 
-Al darle click en el boton de "Opciones" se te abre el siguiente menú :
+Al darle click en el boton de "Figuras" se te abre el siguiente menú :
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/2d1c3fe3-0e7a-4fcb-b151-76b256316f04)
+
+Es decir, "Figuras" tiene 4 opciones, "Línea", "Cuadrado", "Triángulo" y "Círculo" Aquí su descripción:
 
 
