@@ -44,7 +44,7 @@ Este archivo define la implementación de la clase AreaPintar, que es responsabl
 
 # Flujo de ejecución
 
-Inicia en main.cpp y gracias a la interacción del usuario, genera eventos, modifica los eventos del programa y actualiza los valores predeterminados del programa, por la lógica dada en Mainwindow.cpp y areapintar.cpp.
+Inicia en main.cpp y gracias a la interacción del usuario, genera y modifica los eventos del programa, actualiza los valores predeterminados de este, y ocurre gracias a la lógica dada en mainwindow.cpp y areapintar.cpp.
 
 # Contáctanos
 
