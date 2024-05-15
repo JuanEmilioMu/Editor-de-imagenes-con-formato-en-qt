@@ -118,4 +118,32 @@ Al darle click en el boton de "Figuras" se te abre el siguiente menú :
 
 Es decir, "Figuras" tiene 4 opciones, "Línea", "Cuadrado", "Triángulo" y "Círculo" Aquí su descripción:
 
+"Línea"
 
+No saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mouse en el lienzo y se creará la linea recta, tomará los valores que tenga el lapiz en ese momento, es decir, ancho y color:
+
+
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/5c312529-33f1-4706-99e7-030122a7ead4)
+
+
+"Cuadrado"
+
+Al igual que en "Linea" NO saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mouse en el lienzo y se creará tu cuadrado, tomará los valores que tenga el lápiz en ese momento, es decir, ancho y color:
+
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/f6c0f530-af66-4750-9a97-54dcd668e260)
+
+
+"Triángulo"
+
+Al igual que en las figuras anteriores NO saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mouse en el lienzo y se creará tu triángulo, tomará los valores que tenga el lápiz en ese momento, es decir, ancho y color:
+
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/53308cb0-f49f-402f-82c2-d39a9d2261d4)
+
+
+"Círculo"
+
+
+Al igual que en las figuras anteriores NO saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mouse en el lienzo y se creará tu circulo, tomará los valores que tenga el lápiz en ese momento, es decir, ancho y color:
+
+
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/32faa38b-fd3f-415d-a415-ee62b0cee3ac)
