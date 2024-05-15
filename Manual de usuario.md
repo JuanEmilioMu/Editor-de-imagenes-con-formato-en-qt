@@ -113,10 +113,15 @@ Al pulsar la cuarta opción "Borrar pantalla...", tampoco saldrá ninguna ventan
 Al darle click en el boton de "Figuras" se te abre el siguiente menú :
 
 
-![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/2d1c3fe3-0e7a-4fcb-b151-76b256316f04)
+![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/50447326-d39f-4640-ae39-d1f954d95a64)
 
 
-Es decir, "Figuras" tiene 4 opciones, "Línea", "Cuadrado", "Triángulo" y "Círculo" Aquí su descripción:
+Es decir, "Figuras" tiene 5 opciones, "Lapiz", "Línea", "Cuadrado", "Triángulo" y "Círculo" Aquí su descripción:
+
+"Lapiz"
+
+Esta función está especificamente creada para despues de usar cualquier figura incorporada en el programa, es decir, no vas a tener ningún problema al abrir el programa y vas a poder dibujar con el mouse; dado el caso que se necesite hacer uso de figuras, hay que darle a esta opción de "Lapiz" para volver a dibujar con normalidad 
+
 
 "Línea"
 
@@ -128,7 +133,7 @@ No saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mous
 
 "Cuadrado"
 
-Al igual que en "Linea" NO saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mouse en el lienzo y se creará tu cuadrado, tomará los valores que tenga el lápiz en ese momento, es decir, ancho y color:
+Al igual que en "Linea" NO saldrá ningun aviso o ventana emergente, simplemente vas a arrastrar el mouse en el lienzo y se creará tu cuadrado, tomará los valores que tenga el lápiz en ese momento, es decir, ancho y color
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585178/f6c0f530-af66-4750-9a97-54dcd668e260)
 
