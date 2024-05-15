@@ -26,7 +26,7 @@ Aquí su descripción:
 
 Al darle click en el boton de "Abrir" pueden pasar dos cosas
 
-1. si has modificado el archivo te saldra la siguiente imagen:
+1. Si has modificado el archivo te saldra la siguiente imagen:
 
    
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/40e9525f-ca64-427a-902f-87e406711aee)
@@ -58,7 +58,7 @@ Si le das click a la opcion "Guardar como", se te abrira una ventana en la cual 
 
 "Salir"
 
--Si al darle click al boton de "Salir" ya has modificado tu archivo se abrira la siguiente ventana:
+Si al darle click al boton de "Salir" ya has modificado tu archivo se abrira la siguiente ventana:
 
 
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/4ea53fb8-8e19-45b7-9115-389ef8b7be2e)
