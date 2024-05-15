@@ -20,6 +20,8 @@ Al darle click en el boton de "Archivo" se te abre el siguiente menú :
 ![image](https://github.com/JuanEmilioMu/Editor-de-imagenes-con-formato-en-qt/assets/159585399/8f0b0417-31f5-44e4-960c-ea28c9dc28e8)
 
 
+
+
 Es decir, "Archivo" tiene 3 opciones, "Abrir", "Guardar como", "Salir."
 
 Aquí su descripción:
