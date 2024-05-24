@@ -29,6 +29,14 @@ Este es el archivo de cabecera de la clase MainWindow, que es la ventana princip
 
 Este es el archivo de cabecera de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Define la interfaz pública de la clase, incluyendo funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
 
+
+# Explicación funciones y librerías areapintar.h
+
+#include <QColor>  Nos permite el manejo de colores dentro de QT.
+#include <QImage>  Nos permite el manejo de imagenes dentro de QT.
+#include <QPoint>  Nos permite el manejo de puntos dentro de QT, (coordenadas x, y).
+#include <QWidget> Nos permite el manejo de widgets, y derivados para la interfaz gráfica.
+
 **mainwindow.ui**
 
 Este es un archivo de diseño de Qt, no se hace uso de este directamente.
