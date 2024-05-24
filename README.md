@@ -37,6 +37,21 @@ Este es el archivo de cabecera de la clase AreaPintar, que es responsable de dib
 #include <QPoint>  Nos permite el manejo de puntos dentro de QT, (coordenadas x, y).
 #include <QWidget> Nos permite el manejo de widgets, y derivados para la interfaz gráfica.
 
+# bool abrirImagen 
+La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta
+bool guardarImagen
+La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta
+La funcion que recibe un tipo 
+void setColorLapiz
+La función que recibe el color dado por el usuario y lo actualiza
+void setAnchoLapiz
+La función que recibe el ancho dado por el usuario y lo actualiza
+    //van con return porque devuelven un valor en especifico
+    bool isModified() const {return modified;}  //si la imagen ha sido modificada
+    QColor colorLapiz() const {return myColorLapiz;}
+    int anchoLapiz() const {return myAnchoLapiz;}
+
+
 **mainwindow.ui**
 
 Este es un archivo de diseño de Qt, no se hace uso de este directamente.
