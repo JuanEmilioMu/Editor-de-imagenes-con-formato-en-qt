@@ -32,24 +32,68 @@ Este es el archivo de cabecera de la clase AreaPintar, que es responsable de dib
 
 # Explicación funciones y librerías areapintar.h
 
+
 #include <QColor>  Nos permite el manejo de colores dentro de QT.
 #include <QImage>  Nos permite el manejo de imagenes dentro de QT.
 #include <QPoint>  Nos permite el manejo de puntos dentro de QT, (coordenadas x, y).
 #include <QWidget> Nos permite el manejo de widgets, y derivados para la interfaz gráfica.
 
-# bool abrirImagen 
-La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta
+bool abrirImagen 
+La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta.
+
 bool guardarImagen
-La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta
-La funcion que recibe un tipo 
+La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta.
+
 void setColorLapiz
-La función que recibe el color dado por el usuario y lo actualiza
+La función que recibe el color deseado por el usuario.
+
 void setAnchoLapiz
-La función que recibe el ancho dado por el usuario y lo actualiza
-    //van con return porque devuelven un valor en especifico
-    bool isModified() const {return modified;}  //si la imagen ha sido modificada
-    QColor colorLapiz() const {return myColorLapiz;}
-    int anchoLapiz() const {return myAnchoLapiz;}
+La función que recibe el ancho dado por el usuario y lo actualiza en la configuración del lápiz.
+
+bool isModified() 
+Verifica si a la imagen se le ha modificado algo.
+
+QColor colorLapiz() 
+Recibe el color seleccionado en setColorLapiz y lo actualiza en la configuración del lápiz.
+
+int anchoLapiz() 
+Recibe el ancho ingresado por el usuario en setAnchoLapiz y lo actualiza en la configuración del lápiz.
+
+void clearImage(); 
+Esta función nos permite borrar toda la imagen que tengamos en ese momento en la aplicación.
+
+void borrador();
+Esta función nos permite borrar del mismo ancho de lápiz que tengamos en ese momento, sin necesidad de borrar toda la pantalla.
+
+void linea();
+Esta función nos permite hacer una linea totalmente recta al darle en la opción de menú "Figuras" y acto seguido seleccionar "Línea."
+
+void circulo();
+Esta función nos permite hacer un círculo totalmente perfecto al darle en la opción de menú "Figuras" y acto seguido seleccionar "Círculo."
+
+void cuadrado(); 
+Esta función nos permite hacer un cuadrado totalmente perfecto al darle en la opción de menú "Figuras" y acto seguido seleccionar "Cuadrado."
+
+void triangulo();
+Esta función nos permite hacer un triángulo totalmente perfecto al darle en la opción de menú "Figuras" y acto seguido seleccionar "Triángulo."
+
+void lapiz();
+Esta función nos permite hacer un  totalmente perfecto al darle en la opción de menú "Figurasy acto seguido seleccionar ""
+
+void mousePressEvent(QMouseEvent *event) override;
+Esta funcion verifica si se presiona el boton izquierdo del mouse y guarda la posición inicial.
+
+void mouseMoveEvent(QMouseEvent *event) override;
+Esta funcion verifica si se presiona el boton izquierdo del mouse y a su vez si "dibujando" está en verdadero y permite dibujar por donde se mueva el mouse.
+
+void mouseReleaseEvent(QMouseEvent *event) override;
+Verifica si se soltó el botón izquierdo y guarda la ultima posicion del mouse, cuenta con los condicionales de las figuras, es decir "Linea", "Circulo", "triángulo", "Cuadrado" dibuja la figura que el usuario seleccione.
+
+void paintEvent(QPaintEvent *event) override; 
+Esta funcion re-dibuja el cuadrado sucio y crea un nuevo lienzo.
+
+void resizeEvent(QResizeEvent *event) override;
+Esta funcion verifica si el nuevo widget es igual  tamaño que la imagen, si es el caso, la redimensiona.
 
 
 **mainwindow.ui**
