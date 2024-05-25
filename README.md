@@ -29,6 +29,18 @@ Este es el archivo de cabecera de la clase MainWindow, que es la ventana princip
 
 Este es el archivo de cabecera de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Define la interfaz pública de la clase, incluyendo funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
 
+**mainwindow.ui**
+
+Este es un archivo de diseño de Qt, no se hace uso de este directamente.
+
+**ASDA.pro**
+
+Este es un archivo de proyecto para Qt Creator que define la estructura y dependencias del proyecto. Especifica los archivos de código fuente, encabezados y recursos necesarios para compilar todo lo que esta adentro de la aplicación.
+
+**areapintar.cpp**
+
+Este archivo define la implementación de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Proporciona funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
+
 
 # Explicación funciones y librerías areapintar.h
 
@@ -53,10 +65,10 @@ La función que recibe el ancho dado por el usuario y lo actualiza en la configu
 bool isModified() 
 Verifica si a la imagen se le ha modificado algo.
 
-QColor colorLapiz() 
+QColor myColorLapiz
 Recibe el color seleccionado en setColorLapiz y lo actualiza en la configuración del lápiz.
 
-int anchoLapiz() 
+int myAnchoLapiz 
 Recibe el ancho ingresado por el usuario en setAnchoLapiz y lo actualiza en la configuración del lápiz.
 
 void clearImage(); 
@@ -99,21 +111,22 @@ void dibujarLinea(const QPoint &endPoint)
 Esta funcion es la encargada de dibujar en el lienzo, con los valores del lapiz dados por el usuario, desde un punto inicial hasta un punto final (tomados gracias a funciones anteriormente explicadas).
 
 void redimensionImagen(QImage *image, const QSize &newSize)
+Redimensiona una imagen a un nuevo tamaño, copiando el contenido de la imagen original a la nueva imagen.
 
+bool modified
+Esta funcion está diseñada para trabajar de una forma mas ordenada y de fácil acceso, su implementación se basa en verificar si la imagen inicial ha sufrido modificaciones hechas por el usuario.
 
-bool modified; //F o V depende usuario
+bool dibujando
+Esta funcion está diseñada para trabajar de una forma más ordenada y de fácil acceso, su implementación se basa en verificar si en la imagen se está dibujando, es decir a su vez está sufriendo modificaciones.
 
-bool dibujando; //F o V depende usuario
+QImage image
+Funcion que nos permite declarar lo que va en el lienzo como "image", heredado de QImage.
 
-int myAnchoLapiz;
+QPoint inicioMouse 
+Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto inicial del mouse.
 
-QColor myColorLapiz;
-
-QImage image;
-//almacena la imagen
-QPoint inicioMouse; //variable para figuras
-
-QPoint finalMouse;  //variable para figuras
+QPoint finalMouse
+Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto final del mouse.
 
 bool dibujarCuadrado; 
 //funcion dibujar bool retorna f o v
@@ -127,19 +140,6 @@ bool dibujarLapiz; // Nueva bandera para el modo lápiz
 
 void dibujarLineaRecta(const QPoint &startPoint, const QPoint &endPoint);
 Esta función permite dibujar una linea recta, al seleccionar en la opcion de "Figuras" 
-
-**mainwindow.ui**
-
-Este es un archivo de diseño de Qt, no se hace uso de este directamente.
-
-**ASDA.pro**
-
-Este es un archivo de proyecto para Qt Creator que define la estructura y dependencias del proyecto. Especifica los archivos de código fuente, encabezados y recursos necesarios para compilar todo lo que esta adentro de la aplicación.
-
-**areapintar.cpp**
-
-Este archivo define la implementación de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Proporciona funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
-
 
 # Flujo de ejecución
 
