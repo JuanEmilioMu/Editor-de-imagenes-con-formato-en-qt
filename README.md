@@ -196,9 +196,13 @@ void MainWindow::guardar()
 
 Esta funcion se encarga de abrir la funcion "maybeSave" para verificar los cambios 
 
+bool MainWindow::maybeSave()
 
+Esta fucion verifica si hay cambios no guardados en el área de dibujo. Si hay cambios, le pregunta al usuario si quiere guardarlos, descartarlos o cancelar la operación. Dependiendo de la respuesta del usuario, la función guarda los cambios, cancela la operación o simplemente descarta los cambios y continúa. Si no hay cambios, la función devuelve true inmediatamente.
 
+bool MainWindow::guardarArchivo(const QByteArray &fileFormat)
 
+Esta funcion muestra un cuadro de diálogo para que el usuario seleccione dónde guardar un archivo con el formato especificado. Si el usuario proporciona un nombre de archivo, la función llama a otro método (guardarImagen) para realizar la operación de guardado y devuelve true o false según el resultado. Si el usuario cancela la operación, la función simplemente devuelve false.
 
 
 # Flujo de ejecución
