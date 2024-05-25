@@ -42,7 +42,7 @@ Este es un archivo de proyecto para Qt Creator que define la estructura y depend
 Este archivo define la implementación de la clase AreaPintar, que es responsable de dibujar y manejar la entrada del usuario. Proporciona funciones para abrir y guardar imágenes, establecer el color y el ancho de la herramienta de dibujo y manejar eventos de teclado y mouse.
 
 
-# Explicación funciones y librerías areapintar.h
+# Explicación funciones y librerias areapintar
 
 
 #include <QColor>  Nos permite el manejo de colores dentro de QT.
@@ -55,11 +55,11 @@ Este archivo define la implementación de la clase AreaPintar, que es responsabl
 
 bool abrirImagen 
 
-La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta.
+La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta y en caso de que no exista mostrar error.
 
 bool guardarImagen
 
-La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta.
+La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta y lo guarda recibiendo el tipo de archivo y el nombre del archivo.
 
 void setColorLapiz
 
@@ -83,11 +83,11 @@ Recibe el ancho ingresado por el usuario en setAnchoLapiz y lo actualiza en la c
 
 void clearImage()
 
-Esta función nos permite borrar toda la imagen que tengamos en ese momento en la aplicación.
+Esta función nos permite borrar toda la imagen que tengamos en ese momento en la aplicación gracias a que pintamos todo de blanco.
 
 void borrador()
 
-Esta función nos permite borrar del mismo ancho de lápiz que tengamos en ese momento, sin necesidad de borrar toda la pantalla.
+Esta función nos permite borrar del mismo ancho de lápiz que tengamos en ese momento, sin necesidad de borrar toda la pantalla gracias a que actualizamos el valor del color del lapiz a blanco.
 
 void linea()
 
@@ -107,11 +107,11 @@ Esta función nos permite hacer un triángulo totalmente perfecto al darle en la
 
 void lapiz()
 
-Esta función nos permite hacer un  totalmente perfecto al darle en la opción de menú "Figurasy acto seguido seleccionar ""
+Esta función nos permite escoger de nuevo el trazado inicial, es decir volver a pintar con el mouse.
 
 void mousePressEvent(QMouseEvent *event) override
 
-Esta funcion verifica si se presiona el boton izquierdo del mouse y guarda la posición inicial.
+Esta funcion verifica si se presiona el boton izquierdo del mouse y guarda la posición inicial, gracias a los eventos de mouse.
 
 void mouseMoveEvent(QMouseEvent *event) override
 
@@ -151,11 +151,11 @@ Funcion que nos permite declarar lo que va en el lienzo como "image", heredado d
 
 QPoint inicioMouse 
 
-Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto inicial del mouse.
+Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto inicial del mouse por los eventos de mouse.
 
 QPoint finalMouse
 
-Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto final del mouse.
+Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto final del mouse por los eventos de mouse .
 
 bool dibujarCuadrado 
 
@@ -180,6 +180,26 @@ Esta funcion me permite volver a seleccionar el lapiz inicial despues de usar cu
 void dibujarLineaRecta(const QPoint &startPoint, const QPoint &endPoint)
 
 Esta función permite dibujar una linea recta, al seleccionar en la opcion de "Figuras", toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final arrastrando el mouse.
+
+# Explicación funciones mainwindow
+
+
+void MainWindow::closeEvent(QCloseEvent *event)
+
+Esta funcion esta diseñada para cerrar la aplicación, primero verifica la funcion "maybeSave" y su flujo es, si el usuario da aceptar se cierra la app, de lo contrario, ignora es decir, no cierra la app.
+
+void MainWindow::abrir()
+
+Esta función se encarga de abrir un diálogo para que el usuario pueda seleccionar un archivo para abrir. Antes de hacerlo, verifica si hay cambios sin guardar y, si es necesario, le pide al usuario que guarde esos cambios.
+
+void MainWindow::guardar() 
+
+Esta funcion se encarga de abrir la funcion "maybeSave" para verificar los cambios 
+
+
+
+
+
 
 # Flujo de ejecución
 
