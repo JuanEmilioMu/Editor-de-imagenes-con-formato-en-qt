@@ -128,18 +128,23 @@ Funcion creada especificamente para el desarrollo del código en figuras, hereda
 QPoint finalMouse
 Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto final del mouse.
 
-bool dibujarCuadrado; 
-//funcion dibujar bool retorna f o v
-bool dibujarCirculo;  
-//funcion dibujar bool retorna f o v
-bool dibujarTriangulo;
-//funcion dibujar bool retorna f o v
-bool dibujarLineaActiva; 
-//funcion dibujar bool retorna f o v
-bool dibujarLapiz; // Nueva bandera para el modo lápiz
+bool dibujarCuadrado 
+Esta función está diseñada para dibujar un cuadrado, toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final arrastrando el mouse.
+
+bool dibujarCirculo 
+Esta función está diseñada para dibujar un círculo, toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente dibuja una elipse desde el punto incial del usuario hasta el punto final arrastrando el mouse.
+
+bool dibujarTriangulo
+Esta función está diseñada para dibujar un polígono en forma de triángulo, toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final y como su tercer vértice lo coloca horizontalmente alineado con las coordenadas (X, Y) arrastrando el mouse.
+
+bool dibujarLineaActiva 
+Esta función hace un llamado a la función dibujarLineaRecta dandole los argumentos de punto de inicio y final, lo que permite que se dibuje la linea recta en donde el usuario la requiera.
+
+bool dibujarLapiz
+Esta funcion me permite volver a seleccionar el lapiz inicial despues de usar cualquiera de las figuras.
 
 void dibujarLineaRecta(const QPoint &startPoint, const QPoint &endPoint);
-Esta función permite dibujar una linea recta, al seleccionar en la opcion de "Figuras" 
+Esta función permite dibujar una linea recta, al seleccionar en la opcion de "Figuras", toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final arrastrando el mouse.
 
 # Flujo de ejecución
 
