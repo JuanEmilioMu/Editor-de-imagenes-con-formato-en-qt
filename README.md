@@ -54,99 +54,131 @@ Este archivo define la implementación de la clase AreaPintar, que es responsabl
 #include <QWidget> Nos permite el manejo de widgets, y derivados para la interfaz gráfica.
 
 bool abrirImagen 
+
 La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta.
 
 bool guardarImagen
+
 La función que va a recibir un objeto tipo QString con el nombre del archivo y su ruta.
 
 void setColorLapiz
+
 La función que recibe el color deseado por el usuario.
 
 void setAnchoLapiz
+
 La función que recibe el ancho dado por el usuario y lo actualiza en la configuración del lápiz.
 
 bool isModified() 
+
 Verifica si a la imagen se le ha modificado algo.
 
 QColor myColorLapiz
+
 Recibe el color seleccionado en setColorLapiz y lo actualiza en la configuración del lápiz.
 
 int myAnchoLapiz 
+
 Recibe el ancho ingresado por el usuario en setAnchoLapiz y lo actualiza en la configuración del lápiz.
 
-void clearImage(); 
+void clearImage()
+
 Esta función nos permite borrar toda la imagen que tengamos en ese momento en la aplicación.
 
-void borrador();
+void borrador()
+
 Esta función nos permite borrar del mismo ancho de lápiz que tengamos en ese momento, sin necesidad de borrar toda la pantalla.
 
-void linea();
+void linea()
+
 Esta función nos permite hacer una linea totalmente recta al darle en la opción de menú "Figuras" y acto seguido seleccionar "Línea."
 
-void circulo();
+void circulo()
+
 Esta función nos permite hacer un círculo totalmente perfecto al darle en la opción de menú "Figuras" y acto seguido seleccionar "Círculo."
 
-void cuadrado(); 
+void cuadrado()
+
 Esta función nos permite hacer un cuadrado totalmente perfecto al darle en la opción de menú "Figuras" y acto seguido seleccionar "Cuadrado."
 
-void triangulo();
+void triangulo()
+
 Esta función nos permite hacer un triángulo totalmente perfecto al darle en la opción de menú "Figuras" y acto seguido seleccionar "Triángulo."
 
-void lapiz();
+void lapiz()
+
 Esta función nos permite hacer un  totalmente perfecto al darle en la opción de menú "Figurasy acto seguido seleccionar ""
 
-void mousePressEvent(QMouseEvent *event) override;
+void mousePressEvent(QMouseEvent *event) override
+
 Esta funcion verifica si se presiona el boton izquierdo del mouse y guarda la posición inicial.
 
 void mouseMoveEvent(QMouseEvent *event) override
+
 Esta funcion verifica si se presiona el boton izquierdo del mouse y a su vez si "dibujando" está en verdadero y permite dibujar por donde se mueva el mouse.
 
 void mouseReleaseEvent(QMouseEvent *event) override
+
 Verifica si se soltó el botón izquierdo y guarda la ultima posicion del mouse, cuenta con los condicionales de las figuras, es decir "Linea", "Circulo", "triángulo", "Cuadrado" dibuja la figura que el usuario seleccione.
 
-void paintEvent(QPaintEvent *event) override;
+void paintEvent(QPaintEvent *event) override
+
 Esta funcion re-dibuja el cuadrado sucio y crea un nuevo lienzo.
 
-void resizeEvent(QResizeEvent *event) override;
+void resizeEvent(QResizeEvent *event) override
+
 Esta funcion verifica si el nuevo widget es igual  tamaño que la imagen, si es el caso, la redimensiona.
 
 void dibujarLinea(const QPoint &endPoint)
+
 Esta funcion es la encargada de dibujar en el lienzo, con los valores del lapiz dados por el usuario, desde un punto inicial hasta un punto final (tomados gracias a funciones anteriormente explicadas).
 
 void redimensionImagen(QImage *image, const QSize &newSize)
+
 Redimensiona una imagen a un nuevo tamaño, copiando el contenido de la imagen original a la nueva imagen.
 
 bool modified
+
 Esta funcion está diseñada para trabajar de una forma mas ordenada y de fácil acceso, su implementación se basa en verificar si la imagen inicial ha sufrido modificaciones hechas por el usuario.
 
 bool dibujando
+
 Esta funcion está diseñada para trabajar de una forma más ordenada y de fácil acceso, su implementación se basa en verificar si en la imagen se está dibujando, es decir a su vez está sufriendo modificaciones.
 
 QImage image
+
 Funcion que nos permite declarar lo que va en el lienzo como "image", heredado de QImage.
 
 QPoint inicioMouse 
+
 Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto inicial del mouse.
 
 QPoint finalMouse
+
 Funcion creada especificamente para el desarrollo del código en figuras, hereda de la libreria QPoint y toma el punto final del mouse.
 
 bool dibujarCuadrado 
+
 Esta función está diseñada para dibujar un cuadrado, toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final arrastrando el mouse.
 
 bool dibujarCirculo 
+
 Esta función está diseñada para dibujar un círculo, toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente dibuja una elipse desde el punto incial del usuario hasta el punto final arrastrando el mouse.
 
 bool dibujarTriangulo
+
 Esta función está diseñada para dibujar un polígono en forma de triángulo, toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final y como su tercer vértice lo coloca horizontalmente alineado con las coordenadas (X, Y) arrastrando el mouse.
 
 bool dibujarLineaActiva 
+
 Esta función hace un llamado a la función dibujarLineaRecta dandole los argumentos de punto de inicio y final, lo que permite que se dibuje la linea recta en donde el usuario la requiera.
 
 bool dibujarLapiz
+
 Esta funcion me permite volver a seleccionar el lapiz inicial despues de usar cualquiera de las figuras.
 
-void dibujarLineaRecta(const QPoint &startPoint, const QPoint &endPoint);
+void dibujarLineaRecta(const QPoint &startPoint, const QPoint &endPoint)
+
 Esta función permite dibujar una linea recta, al seleccionar en la opcion de "Figuras", toma los mismos valores que se tengan en ese momento definidos para el lápiz, y finalmente lo dibuja desde el punto incial del usuario hasta el punto final arrastrando el mouse.
 
 # Flujo de ejecución
