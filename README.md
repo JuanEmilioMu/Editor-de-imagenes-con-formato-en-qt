@@ -83,18 +83,50 @@ Esta función nos permite hacer un  totalmente perfecto al darle en la opción d
 void mousePressEvent(QMouseEvent *event) override;
 Esta funcion verifica si se presiona el boton izquierdo del mouse y guarda la posición inicial.
 
-void mouseMoveEvent(QMouseEvent *event) override;
+void mouseMoveEvent(QMouseEvent *event) override
 Esta funcion verifica si se presiona el boton izquierdo del mouse y a su vez si "dibujando" está en verdadero y permite dibujar por donde se mueva el mouse.
 
-void mouseReleaseEvent(QMouseEvent *event) override;
+void mouseReleaseEvent(QMouseEvent *event) override
 Verifica si se soltó el botón izquierdo y guarda la ultima posicion del mouse, cuenta con los condicionales de las figuras, es decir "Linea", "Circulo", "triángulo", "Cuadrado" dibuja la figura que el usuario seleccione.
 
-void paintEvent(QPaintEvent *event) override; 
+void paintEvent(QPaintEvent *event) override;
 Esta funcion re-dibuja el cuadrado sucio y crea un nuevo lienzo.
 
 void resizeEvent(QResizeEvent *event) override;
 Esta funcion verifica si el nuevo widget es igual  tamaño que la imagen, si es el caso, la redimensiona.
 
+void dibujarLinea(const QPoint &endPoint)
+Esta funcion es la encargada de dibujar en el lienzo, con los valores del lapiz dados por el usuario, desde un punto inicial hasta un punto final (tomados gracias a funciones anteriormente explicadas).
+
+void redimensionImagen(QImage *image, const QSize &newSize)
+
+
+bool modified; //F o V depende usuario
+
+bool dibujando; //F o V depende usuario
+
+int myAnchoLapiz;
+
+QColor myColorLapiz;
+
+QImage image;
+//almacena la imagen
+QPoint inicioMouse; //variable para figuras
+
+QPoint finalMouse;  //variable para figuras
+
+bool dibujarCuadrado; 
+//funcion dibujar bool retorna f o v
+bool dibujarCirculo;  
+//funcion dibujar bool retorna f o v
+bool dibujarTriangulo;
+//funcion dibujar bool retorna f o v
+bool dibujarLineaActiva; 
+//funcion dibujar bool retorna f o v
+bool dibujarLapiz; // Nueva bandera para el modo lápiz
+
+void dibujarLineaRecta(const QPoint &startPoint, const QPoint &endPoint);
+Esta función permite dibujar una linea recta, al seleccionar en la opcion de "Figuras" 
 
 **mainwindow.ui**
 
