@@ -46,8 +46,11 @@ Este archivo define la implementación de la clase AreaPintar, que es responsabl
 
 
 #include <QColor>  Nos permite el manejo de colores dentro de QT.
+
 #include <QImage>  Nos permite el manejo de imagenes dentro de QT.
+
 #include <QPoint>  Nos permite el manejo de puntos dentro de QT, (coordenadas x, y).
+
 #include <QWidget> Nos permite el manejo de widgets, y derivados para la interfaz gráfica.
 
 bool abrirImagen 
